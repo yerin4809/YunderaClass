@@ -21,7 +21,6 @@ services:
         limits:
           memory: 2G
           cpus: '1.0'
-
     volumes:
       - /DATA/AppData/$AppID/data:/app/data
       - /DATA/Downloads:/downloads:ro
@@ -40,9 +39,9 @@ x-casaos:
     - arm64
   main: ConvertX
   pre-installed-cmd: |
-    # mkdir -p /DATA/AppData/$AppID/data &&
-    # chmod -R 777 /DATA/AppData/$AppID/data
-  author : ikjun
+    mkdir -p /DATA/AppData/$AppID/data &&
+    chmod -R 777 /DATA/AppData/$AppID/data
+  author: ikjun
   category: Utilities
   developer: C4illin
   icon: https://cdn.jsdelivr.net/gh/BookJJun-IJ/YunderaClass@main/Apps/ConvertX/icon.png
