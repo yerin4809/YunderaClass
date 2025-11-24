@@ -15,7 +15,7 @@ services:
       - ACCOUNT_REGISTRATION=false
       - HTTP_ALLOWED=true
       - ALLOW_UNAUTHENTICATED=false
-      - ALLOW_UNAUTHENTICATED=24
+
     deploy:
       resources:
         limits:
